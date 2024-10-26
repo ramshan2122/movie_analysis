@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Analysis</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+  <header>
+    <h1>Movie Analysis Dashboard</h1>
+  </header>
+ 
+  <section class="filters">
+    <button id="thrillerAfter2000Btn">Thriller after 2000</button>
+    <button id="topRatedDramasBtn">Top Rated Dramas</button>
+    <button id="leoActionMoviesBtn">Leonardo DiCaprio Action Movies</button>
+    <button id="christianBaleDramasBtn">Christian Bale Dramas</button>
+    <button id="timRobbinsDramasBtn">Tim Robbins Dramas</button>
+  </section>
+
+  <section class="movies-grid" id="moviesGrid">
+    <!-- Movies will be rendered here -->
+  </section>
+<!-- Modal Structure -->
+<div id="notFoundModal" class="modal">
+    <div class="modal-content">
+      <span class="close-button">&times;</span>
+      <h2>Not Found</h2>
+      <p>No movies match your criteria. Please try again with different filters.</p>
+    </div>
+  </div>
+  
+  <script src="./scripts.js"></script>
+
+</body>
+</html>
